@@ -3,20 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logo thing</title>
-    <link rel="stylesheet" href="STYLE.css">
+    <title>Crusin' Customs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <!-- Corvette logo -->
-        <img src="corvette.png" alt="Corvette Logo" class="logo corvette-logo">
-        <!-- Second logo -->
-        <img src="logo.png" alt="Second Logo" class="logo second-logo">
-    </div>
+    <header>
+        <div class="logo">
+            <img src="logonobg.png" alt="Corvette Auto Mechanic Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div>
-        <h1>page 1 here</h1>
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Your Corvette Deserves the Best Care</h1>
+            <p>Expert Auto Mechanic Services for Your Corvette</p>
+            <a href="#contact" class="cta-btn">Get in Touch</a>
+        </div>
+        <div class="corvette-container">
+            <div class="corvette-image-container">
+                <img src="vette.png" alt="Corvette" class="corvette-image">
+            </div>
+        </div>
+    </section>
+
+    <div class="center">
+        <img src="2.png" class="fade-image"/>
     </div>
-    <script src="script.js"></script>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Engine Repair</h3>
+                <p>Our expert mechanics provide comprehensive engine repair and maintenance.</p>
+            </div>
+            <div class="service">
+                <h3>Transmission Services</h3>
+                <p>We specialize in Corvette transmission diagnostics and repairs.</p>
+            </div>
+            <div class="service">
+                <h3>Performance Upgrades</h3>
+                <p>Enhance your Corvette's performance with our custom upgrades.</p>
+            </div>
+        </div>
+    </section>    
+    
+    <div class="center">
+        <img src="3.png" class="fade-image" class="center"/>
+    </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Crusin' Customs, we have years of experience working on Corvettes. Our certified mechanics are passionate about providing </p>
+        <p>top-quality service for your prized vehicle. Every one of our mechanics are certified yearly with the NRVA and CRSV. We promise </p>
+        <p>you a wait time of less than 2 weeks and you'll be back on the road! If not, you will recieve lifetime service, free of charge.</p>
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to get started? Reach out to us today!</p>
+        <button id="reveal" onclick="document.getElementById('email').style.display='block'; this.style.display='none';">Click To Reveal Email</button>
+        <p id="email" style="display:none;">john@cruzincustoms.com</p>
+    </section>
+    
+    <style>
+        #email { display: none; }
+    </style>
+    
+
+    <footer>
+        <p>Copyright 2024 Cruzin' Customs</p>
+    </footer>
 </body>
 </html>
